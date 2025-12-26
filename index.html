@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERPUNK PORTFOLIO | SYSTEM ONLINE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="scanline"></div>
+    
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div class="hud-top-right">
+        COORD: 35.6895° N, 139.6917° E<br>
+        SYSTEM STATUS: <span style="color:var(--cyber-blue)">OPTIMAL</span>
+    </div>
+    <div class="hud-corner">
+        <span class="blinking">_</span> READY_TO_CONNECT
+    </div>
+
+    <div class="cyber-loader">
+        <div class="glitch" data-text="INITIALIZING...">INITIALIZING...</div>
+        <div class="loader-bar"><div class="loader-progress"></div></div>
+        <div style="margin-top: 10px; font-size: 0.8rem;" id="loader-text">Loading Assets...</div>
+    </div>
+
+    <nav>
+        <div class="logo hover-trigger">Uchida's_PF</div>
+        <div class="hover-trigger">/// MENU</div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <p class="hacker-text" data-value="FUTURE_WEB_DEVELOPER">FUTURE_WEB_DEVELOPER</p>
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="CYBERPUNK">CYBERPUNK</h1>
+            </div>
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="DESIGN">DESIGN</h1>
+            </div>
+            
+            <a href="#works" class="cyber-btn hover-trigger">Explore System</a>
+            <div class="scroll-line"></div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title" data-text="01_PROFILE">01_PROFILE</h2>
+            <div style="max-width: 800px; font-size: 1.2rem; border-left: 2px solid var(--cyber-pink); padding-left: 2rem;">
+                <p>
+                    <span style="color: var(--cyber-pink); font-family: var(--font-mono);">WARNING:</span> 
+                    従来のウェブデザイン概念を破壊する。<br><br>
+                    私はコードで「世界」を構築するフロントエンドエンジニアです。
+                    没入感のあるユーザー体験、マイクロインタラクション、そして視覚的なインパクトを重視した開発を行っています。
+                    React, Three.js, WebGLを駆使し、ブラウザを異次元への入り口に変えます。
+                </p>
+            </div>
+        </section>
+
+        <section id="works">
+            <h2 class="section-title" data-text="02_PROJECTS">02_PROJECTS</h2>
+            
+            <div class="project-grid">
+                <div class="project-card hover-trigger">
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop" class="project-img" alt="Project 1">
+                    <h3 class="project-title">NEON CITY</h3>
+                    <p class="project-tags">THREE.JS / WEBGL / REACT</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #aaa;">3D空間を飛び回る没入型ウェブサイト。</p>
+                </div>
+
+                <div class="project-card hover-trigger">
+                    <img src="https://images.unsplash.com/photo-1515630278258-407f66498911?q=80&w=2069&auto=format&fit=crop" class="project-img" alt="Project 2">
+                    <h3 class="project-title">AI INTERFACE</h3>
+                    <p class="project-tags">UI/UX / PYTHON / NEXT.JS</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #aaa;">人工知能との対話を視覚化したダッシュボード。</p>
+                </div>
+
+                <div class="project-card hover-trigger">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=2070&auto=format&fit=crop" class="project-img" alt="Project 3">
+                    <h3 class="project-title">DATA VISUALIZER</h3>
+                    <p class="project-tags">D3.JS / VUE / SCSS</p>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: #aaa;">複雑なビッグデータを美しく可視化するツール。</p>
+                </div>
+            </div>
+        </section>
+
+        <section style="margin-bottom: 5rem;">
+            <h2 class="section-title" data-text="03_CONTACT">03_CONTACT</h2>
+            <div style="font-family: var(--font-mono); font-size: 1.5rem;">
+                <p>SEND_TRANSMISSION_TO:</p>
+                <a href="mailto:cyber@example.com" class="hover-trigger" style="color: var(--cyber-blue); text-decoration: underline;">CYBER@EXAMPLE.COM</a>
+                <br><br>
+                <div style="display: flex; gap: 2rem; margin-top: 2rem;">
+                    <a href="#" class="hover-trigger">[ GITHUB ]</a>
+                    <a href="#" class="hover-trigger">[ TWITTER ]</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
